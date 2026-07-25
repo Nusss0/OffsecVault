@@ -6,7 +6,6 @@ tags:
   - Networking
   - Shell
 ---
-
 > Initial access to a remote server is usually in the context of a low-privileged user, which does not give complete access over the box. To gain full access, we need to find an internal/local vulnerability that escalates our privileges to the root user on Linux or the administrator/SYSTEM user on Windows.
 
 ---
