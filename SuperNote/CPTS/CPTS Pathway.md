@@ -10,4 +10,9 @@
 - [ ] [Introduction](https://academy.hackthebox.com/app/module/77/section/721)
 - [ ] [Setup](https://academy.hackthebox.com/app/module/77)
 - [ ] [[03 - Pentesting Basic]]
+- [ ] [[07 - Knowledge Check]]
+
+---
+## Network Enumeration with Nmap
+- [ ] [[01 - Introduction to Nmap]]
 - [ ] 

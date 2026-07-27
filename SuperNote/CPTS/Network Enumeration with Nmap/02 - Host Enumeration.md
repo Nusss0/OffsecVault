@@ -1,0 +1,3 @@
+- [ ] [[Host Discovery]] - the process of identifying which systems on a network are online and reachable before scanning them for ports and services. 
+- [ ] [[Host and Port Scanning]] - After knowing a host alive, we identifying open ports, running services, service versions, service-provided information, and the operating system.
+- [ ] [[Saving the Results]] - We could save the Nmap result in several formats.
