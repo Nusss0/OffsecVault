@@ -4,7 +4,7 @@ tags:
 ## Function
 >**
 ---
-###  Usage : 
+##  Syntax : 
 ```shell
 
 ```

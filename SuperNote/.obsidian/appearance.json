@@ -1,4 +1,6 @@
 {
   "translucency": true,
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [
+    "Tables"
+  ]
 }
