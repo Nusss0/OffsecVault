@@ -20,28 +20,29 @@ nmap <scan types> [options] <target>
 >[!info] A **scan type** tells Nmap _how_ to probe the target — which kind of packets to send and how to read the responses to decide if a port is open, closed, or filtered.
 
 ### Options : 
-| Command              | Description                                                                                               |
-| -------------------- | --------------------------------------------------------------------------------------------------------- |
-| `-p <ports(-,)>`     | Scan specific ports                                                                                       |
-| `-p-`                | Scan all 65535 ports                                                                                      |
-| `-F`                 | Top Ports                                                                                                 |
-| `-sV`                | Detect service versions                                                                                   |
-| `-sC`                | Run default scripts                                                                                       |
-| `-n`                 | Disable DNS Resolutions                                                                                   |
-| `-O`                 | Detect OS                                                                                                 |
-| `-A`                 | Aggressive (`-sV`, `-O`, scripts, traceroute)                                                             |
-| `-Pn`                | Skip ping, treat host as up                                                                               |
-| `-v`                 | Verbose output                                                                                            |
-| `-sn`                | Disable port scanning                                                                                     |
-| `-oN <file>`         | Save output (Normal) to a file                                                                            |
-| `-oG <file>`         | Save output (Grepable) to a file                                                                          |
-| `-oX <file>`         | Save output (XML) to a file                                                                               |
-| `-oA <file>`         | Save output (ALL) to a file                                                                               |
-| `-iL <file>`         | Performs defined scans against targets in provided `<file>` list.                                         |
-| `--min-rate=<val>`   | stops Nmap from waiting patiently on each silent port. It keeps firing at ≥`<val>` packets/sec regardless |
-| `--reason`           | Displays the reason for specific result.                                                                  |
-| `--packet-trace`     | Shows all packets sent and received                                                                       |
-| `--disable-arp-ping` | disable ARP pings                                                                                         |
+| Command                    | Description                                                                                               |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `-p <ports(-,)>`           | Scan specific ports                                                                                       |
+| `-p-`                      | Scan all 65535 ports                                                                                      |
+| `-F`                       | Top Ports                                                                                                 |
+| `-sV`                      | Detect service versions                                                                                   |
+| `-sC`                      | Run default scripts                                                                                       |
+| `-n`                       | Disable DNS Resolutions                                                                                   |
+| `-O`                       | Detect OS                                                                                                 |
+| `-A`                       | Aggressive (`-sV`, `-O`, scripts, traceroute)                                                             |
+| `-Pn`                      | Skip ping, treat host as up                                                                               |
+| `-v/-vv`                   | Verbose output (Show output directly)                                                                     |
+| `-sn`                      | Disable port scanning                                                                                     |
+| `-oN <file>`               | Save output (Normal) to a file                                                                            |
+| `-oG <file>`               | Save output (Grepable) to a file                                                                          |
+| `-oX <file>`               | Save output (XML) to a file                                                                               |
+| `-oA <file>`               | Save output (ALL) to a file                                                                               |
+| `-iL <file>`               | Performs defined scans against targets in provided `<file>` list.                                         |
+| `--min-rate=<val>`         | stops Nmap from waiting patiently on each silent port. It keeps firing at ≥`<val>` packets/sec regardless |
+| `--reason`                 | Displays the reason for specific result.                                                                  |
+| `--packet-trace`           | Shows all packets sent and received                                                                       |
+| `--disable-arp-ping`       | disable ARP pings                                                                                         |
+| `--stats-every=<duration>` | Print stats every **x** seconds (`s`) or **x** minutes (`m`)                                              |
 
 ---
 ## Extras :
