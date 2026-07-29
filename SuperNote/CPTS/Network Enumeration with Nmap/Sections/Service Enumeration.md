@@ -1,5 +1,9 @@
 ---
 tags:
+  - Material
+  - HTB
+  - CPTS
+  - Networking
 ---
 > Service enumeration is the process of determining the application running on a port and its version as accurately as possible.
 

@@ -15,4 +15,4 @@
 ---
 ## Network Enumeration with Nmap
 - [ ] [[01 - Introduction to Nmap]]
-- [ ] 
+- [ ] [[02 - Host Enumeration]]

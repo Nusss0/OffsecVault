@@ -77,7 +77,7 @@ RCVD ... ICMP ... Port 445 unreachable (type=3/code=3) ...   ← the rejection
 ---
 ### Others :
 - Saved Format example : [[Saving the Results]]
-
+- We could do scripting also on `Nmap` : [[Nmap Scripting Engine]]
 ---
 ## Related Source : 
 [[Service Scanning]]
