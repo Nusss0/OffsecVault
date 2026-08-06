@@ -4,7 +4,7 @@ tags:
   - Productivity
   - Tools
 ---
-> A tiling window manager for X11 that arranges windows automatically without overlap, controlled entirely by keyboard.
+q> A tiling window manager for X11 that arranges windows automatically without overlap, controlled entirely by keyboard.
 
 > [!important]
 > This note documents a **customised** configuration, not stock i3. Keybindings were chosen to mirror tmux so that motions transfer between layers. On a machine without this config, defaults differ — notably splits (`$mod+v` / `$mod+h`) and focus keys (`$mod+j/k/l/;`).
