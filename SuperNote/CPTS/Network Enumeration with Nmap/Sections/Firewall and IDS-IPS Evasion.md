@@ -4,6 +4,8 @@ tags:
   - HTB
   - CPTS
   - Networking
+  - Firewall
+  - IDS/IPS
 ---
 > Nmap gives us many different ways to bypass firewall rules and IDS/IPS. These methods include the fragmentation of packets, the use of decoys, and others.
 

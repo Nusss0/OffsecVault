@@ -12,11 +12,12 @@ nmap <scan types> [options] <target>
 ```
 
 ### Scan Types :
-| Scan Type        | Flag  |
-| ---------------- | ----- |
-| SYN scan         | `-sS` |
-| UDP scan         | `-sU` |
-| TCP Connect scan | `-sT` |
+| Scan Type               | Flag  |
+| ----------------------- | ----- |
+| SYN scan                | `-sS` |
+| UDP scan                | `-sU` |
+| TCP Connect scan        | `-sT` |
+| Checking Firewall Exist | `-sA` |
 >[!info] A **scan type** tells Nmap _how_ to probe the target — which kind of packets to send and how to read the responses to decide if a port is open, closed, or filtered.
 
 ### Options : 
