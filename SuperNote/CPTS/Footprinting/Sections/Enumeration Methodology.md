@@ -53,15 +53,7 @@ Theoretically, it is also possible to go through the wall headfirst, but very of
 |4. Processes|Identify the internal processes, sources, and destinations associated with the services.|PID, Processed Data, Tasks, Source, Destination|
 |5. Privileges|Identification of the internal permissions and privileges to the accessible services.|Groups, Users, Permissions, Restrictions, Environment|
 |6. OS Setup|Identification of the internal components and systems setup.|OS Type, Patch Level, Network config, OS Environment, Configuration files, sensitive private files|
-
-```mermaid
-flowchart TD
-    L1["1. Internet Presence"] --> L2["2. Gateway"]
-    L2 --> L3["3. Accessible Services"]
-    L3 --> L4["4. Processes"]
-    L4 --> L5["5. Privileges"]
-    L5 --> L6["6. OS Setup"]
-```
+![[Pasted image 20260813230257.png]]
 
 > [!important] The human aspect and the information that can be obtained by employees using OSINT have been removed from the "Internet Presence" layer for simplicity.
 
@@ -70,6 +62,8 @@ flowchart TD
 ## The Labyrinth Analogy
 
 > We can imagine the entire penetration test in the form of a labyrinth where we have to identify the gaps and find the way to get us inside as quickly and effectively as possible.
+
+![[Pasted image 20260813230155.png]]
 
 The squares in such a labyrinth represent the gaps/vulnerabilities.
 
