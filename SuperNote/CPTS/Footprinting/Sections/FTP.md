@@ -1,2 +1,278 @@
 > The `File Transfer Protocol` (`FTP`) is one of the oldest protocols on the Internet. The FTP runs within the application layer of the TCP/IP protocol stack. Thus, it is on the same layer as `HTTP` or `POP`. These protocols also work with the support of browsers or email clients to perform their services. There are also special FTP programs for the File Transfer Protocol.
 
+> [!Info]- Illustration
+> Let us imagine that we want to upload local files to a server and download other files using the [FTP](https://datatracker.ietf.org/doc/html/rfc959) protocol. In an FTP connection, two channels are opened. First, the client and server establish a control channel through `TCP port 21`. The client sends commands to the server, and the server returns status codes. Then both communication participants can establish the data channel via `TCP port 20`. This channel is used exclusively for data transmission, and the protocol watches for errors during this process. If a connection is broken off during transmission, the transport can be resumed after re-established contact.
+
+---
+## TFTP
+>`Trivial File Transfer Protocol` (`TFTP`) is simpler than FTP and performs file transfers between client and server processes. However, it `does not` provide user authentication and other valuable features supported by FTP. In addition, while FTP uses TCP, TFTP uses `UDP`, making it an unreliable protocol and causing it to use UDP-assisted application layer recovery.
+
+
+> [!Warning]- Not Require User's Auth
+> Unlike FTP, TFTP does not require the user's authentication. It does not support protected login via passwords and sets limits on access based solely on the read and write permissions of a file in the operating system. Practically, this leads to TFTP operating exclusively in directories and with files that have been shared with all users and can be read and written globally. Because of the lack of security, TFTP, unlike FTP, may only be used in local and protected networks.
+
+Let us take a look at a few commands of `TFTP`:
+
+|**Commands**|**Description**|
+|---|---|
+|`connect`|Sets the remote host, and optionally the port, for file transfers.|
+|`get`|Transfers a file or set of files from the remote host to the local host.|
+|`put`|Transfers a file or set of files from the local host onto the remote host.|
+|`quit`|Exits tftp.|
+|`status`|Shows the current status of tftp, including the current transfer mode (ascii or binary), connection status, time-out value, and so on.|
+|`verbose`|Turns verbose mode, which displays additional information during file transfer, on or off.|
+Unlike the FTP client, `TFTP` does not have directory listing functionality.
+
+---
+## Default Configuration
+>One of the most used FTP servers on Linux-based distributions is [vsFTPd](https://security.appspot.com/vsftpd.html). The default configuration of vsFTPd can be found in `/etc/vsftpd.conf`, and some settings are already predefined by default.
+
+The vsFTPd server is only one of a few FTP servers available to us. There are many different alternatives to it, which also bring, among other things, many more functions and configuration options with them. We use vsFTPd because it is the best way to show the configuration possibilities of FTP without going to the man page.
+
+> [!info]- vsFTPd Config File
+> 
+> ```shell
+nusss@htb[/htb]$ cat /etc/vsftpd.conf | grep -v "#"
+>```
+>|**Setting**|**Description**|
+|---|---|
+|`listen=NO`|Run from inetd or as a standalone daemon?|
+|`listen_ipv6=YES`|Listen on IPv6 ?|
+|`anonymous_enable=NO`|Enable Anonymous access?|
+|`local_enable=YES`|Allow local users to login?|
+|`dirmessage_enable=YES`|Display active directory messages when users go into certain directories?|
+|`use_localtime=YES`|Use local time?|
+|`xferlog_enable=YES`|Activate logging of uploads/downloads?|
+|`connect_from_port_20=YES`|Connect from port 20?|
+|`secure_chroot_dir=/var/run/vsftpd/empty`|Name of an empty directory|
+|`pam_service_name=vsftpd`|This string is the name of the PAM service vsftpd will use.|
+|`rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem`|The last three options specify the location of the RSA certificate to use for SSL encrypted connections.|
+|`rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key`||
+|`ssl_enable=NO`|
+
+In addition, there is a file called `/etc/ftpusers` that we also need to pay attention to, as this file is used to deny certain users access to the FTP service.
+
+
+> [!info] Example
+> 
+> ```shell
+> nusss@htb[/htb]$ cat /etc/ftpusers 
+> guest 
+> john 
+> kevin
+> ```
+
+In the example above, the users guest, john, and kevin are not permitted to log in to the FTP service, even if they exist on the Linux system.
+
+---
+## Dangerous Settings
+>One of the authentication mechanisms is the `anonymous` user. This if often used to allow everyone on the internal network to share files and data without accessing each other's computers. With vsFTPd, the optional settingsat can be added to the configuration file for the anonymous login look like this:
+
+|**Setting**|**Description**|
+|---|---|
+|`anonymous_enable=YES`|Allowing anonymous login?|
+|`anon_upload_enable=YES`|Allowing anonymous to upload files?|
+|`anon_mkdir_write_enable=YES`|Allowing anonymous to create new directories?|
+|`no_anon_password=YES`|Do not ask anonymous for password?|
+|`anon_root=/home/username/ftp`|Directory for anonymous.|
+|`write_enable=YES`|Allow the usage of FTP commands: STOR, DELE, RNFR, RNTO, MKD, RMD, APPE, and SITE?|
+If the setting above is used, we can access the FTP server and log in with the anonymous user. The use of the anonymous account can occur in interval env and infrastructures where the participants are all known. As soon as we connect to vsFTPd server, the `response code 220` is displayed with the **banner of the FTP server**. Also this banner often contain the description of the `service` and even the `version` of it.
+
+
+> [!example]- Anonymous Login
+> ```shell
+> nusss@htb[/htb]$ ftp 10.129.14.136
+>
+Connected to 10.129.14.136.
+220 "Welcome to the HTB Academy vsFTP service."
+Name (10.129.14.136:cry0l1t3): anonymous
+>
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+>
+ftp> ls
+>
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 1002     1002      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Clients
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 1002     1002           41 Sep 14 16:45 Important Notes.txt
+>226 Directory send OK.
+>
+> ```
+
+However, to get the first overview of the server's settings, we can use the following command : 
+
+> [!example]- vsFTPd Status
+> ```shell
+ftp> status
+>
+Connected to 10.129.14.136.
+No proxy connection.
+Connecting using address family: any.
+Mode: stream; Type: binary; Form: non-print; Structure: file
+Verbose: on; Bell: off; Prompting: on; Globbing: on
+Store unique: off; Receive unique: off
+Case: off; CR stripping: on
+Quote control characters: on
+Ntrans: off
+Nmap: off
+Hash mark printing: off; Use of PORT cmds: on
+Tick counter printing: off
+>```
+
+Some commands should be used occasionally, as these will make the server show us more information that we can use for our purposes. These commands include `debug` and `trace`.
+
+> [!example]- vsFTPd Detailed Output
+> ```shell
+> ftp> debug
+>
+Debugging on (debug=1).
+>
+ftp> trace
+>
+Packet tracing on.
+>
+ftp> ls
+>
+---> PORT 10,10,14,4,188,195
+200 PORT command successful. Consider using PASV.
+---> LIST
+150 Here comes the directory listing.
+-rw-rw-r--    1 1002     1002      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 1002     1002         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 1002     1002           41 Sep 14 16:45 Important Notes.txt
+226 Directory send OK.
+> ```
+
+With settings :
+
+| **Setting**               | **Description**                                                                  |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| `dirmessage_enable=YES`   | Show a message when they first enter a new directory?                            |
+| `chown_uploads=YES`       | Change ownership of anonymously uploaded files?                                  |
+| `chown_username=username` | User who is given ownership of anonymously uploaded files.                       |
+| `local_enable=YES`        | Enable local users to login?                                                     |
+| `chroot_local_user=YES`   | Place local users into their home directory?                                     |
+| `chroot_list_enable=YES`  | Use a list of local users that will be placed in their home directory?           |
+| `hide_ids=YES`            | All user and group information in directory listings will be displayed as "ftp". |
+| `ls_recurse_enable=YES`   | Allows the use of recurse listings.                                              |
+
+> [!caution] 
+If the `hide_ids=YES` setting is present, the UID and GUID representation of the service will be overwritten, making it more difficult for us to identify with which right these files are written and uploaded.
+
+Here is the example :
+
+> [!example]- Example of hide_ids=YES
+> ```shell
+> ftp> ls
+>
+---> TYPE A
+200 Switching to ASCII mode.
+ftp: setsockopt (ignored): Permission denied
+---> PORT 10,10,14,4,223,101
+200 PORT command successful. Consider using PASV.
+---> LIST
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp     ftp      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 ftp     ftp           41 Sep 14 16:45 Important Notes.txt
+-rw-------    1 ftp     ftp            0 Sep 15 14:57 testupload.txt
+226 Directory send OK.
+> ```
+
+This setting is used to prevent local username from being revealed. With the username, we could attack the services like FTP and SSH and many others with a brute-force attack in theory. However, in reality, [fail2ban](https://en.wikipedia.org/wiki/Fail2ban) solutions are now a standard implementation of any infrastructure that logs the IP address and blocks all access to the infrastructure after a certain number of failed login attempts.
+
+---
+## Recursive Listing
+>Another helpful setting we can use for our purposes is the `ls_recurse_enable=YES`. This is often set on the vsFTPd server to have a better overview of the FTP directory structure, as it allows us to see all the visible content at once.
+
+> [!example]- Example of Recursive Listing
+> ```shell
+> ftp> ls -R
+>
+---> PORT 10,10,14,4,222,149
+200 PORT command successful. Consider using PASV.
+---> LIST -R
+150 Here comes the directory listing.
+.:
+-rw-rw-r--    1 ftp      ftp      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 ftp      ftp           41 Sep 14 16:45 Important Notes.txt
+-rw-------    1 ftp      ftp            0 Sep 15 14:57 testupload.txt
+>
+./Clients:
+drwx------    2 ftp      ftp          4096 Sep 16 18:04 HackTheBox
+drwxrwxrwx    2 ftp      ftp          4096 Sep 16 18:00 Inlanefreight
+>
+./Clients/HackTheBox:
+-rw-r--r--    1 ftp      ftp         34872 Sep 16 18:04 appointments.xlsx
+-rw-r--r--    1 ftp      ftp        498123 Sep 16 18:04 contract.docx
+-rw-r--r--    1 ftp      ftp        478237 Sep 16 18:04 contract.pdf
+-rw-r--r--    1 ftp      ftp           348 Sep 16 18:04 meetings.txt
+>
+./Clients/Inlanefreight:
+-rw-r--r--    1 ftp      ftp         14211 Sep 16 18:00 appointments.xlsx
+-rw-r--r--    1 ftp      ftp         37882 Sep 16 17:58 contract.docx
+-rw-r--r--    1 ftp      ftp            89 Sep 16 17:58 meetings.txt
+-rw-r--r--    1 ftp      ftp        483293 Sep 16 17:59 proposal.pptx
+>
+./Documents:
+-rw-r--r--    1 ftp      ftp         23211 Sep 16 18:05 appointments-template.xlsx
+-rw-r--r--    1 ftp      ftp         32521 Sep 16 18:05 contract-template.docx
+-rw-r--r--    1 ftp      ftp        453312 Sep 16 18:05 contract-template.pdf
+>
+./Employees:
+226 Directory send OK.
+> ```
+
+---
+## Download a File
+>Downloading and uploading is one of the main features of FTP server. This allow us to use `LFI vulnerabilities` to make the host executes system commands. Attacks are also possible with the FTP logs, this lead to `Remote Command Execution (RCE)`.
+
+> [!example]- Example of Download a File
+> ```shell
+> ftp> ls
+>
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rwxrwxrwx    1 ftp      ftp             0 Sep 16 17:24 Calendar.pptx
+drwxrwxrwx    4 ftp      ftp          4096 Sep 16 17:57 Clients
+drwxrwxrwx    2 ftp      ftp          4096 Sep 16 18:05 Documents
+drwxrwxrwx    2 ftp      ftp          4096 Sep 16 17:24 Employees
+-rwxrwxrwx    1 ftp      ftp            41 Sep 18 15:58 Important Notes.txt
+226 Directory send OK.
+>
+ftp> get Important\ Notes.txt
+>
+local: Important Notes.txt remote: Important Notes.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for Important Notes.txt (41 bytes).
+226 Transfer complete.
+41 bytes received in 0.00 secs (606.6525 kB/s)
+>
+ftp> exit
+>
+221 Goodbye.
+>
+> ```
+
+We also can download **all the files and folders** we have access to at once. This is especially useful if the FTP server has many different files in a larger folder structure.
+
+> [!danger] 
+> However, this can cause alarms because no one from the company usually wants to download all files and content all at once.
+
+> [!example]- Example of Download All Available Files
+>![[Pasted image 20260816220524.png]]
+
+Once we have downloaded all the files, `wget` will create a directory with the name of the IP address of our target. All downloaded files are stored there, which we can then inspect locally.
+
