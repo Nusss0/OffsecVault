@@ -33,16 +33,14 @@ The analysis of such attacks is based on pattern matching and signatures. If spe
 
 > When a port is shown as `filtered`, it can have several reasons. In most cases, firewalls have certain rules set to handle specific connections. The packets can either be **dropped** or **rejected**.
 
-[!info] Dropped
-
+>[!info] Dropped
 > The packets are ignored, and no response is returned from the host.
 
-[!info] Rejected
-
+>[!info] Rejected
 > Elicits an explicit response. TCP packets are returned with an `RST` flag, while ICMP can contain different types of error codes.
 
-[!info]- ICMP error codes for rejected packets
-
+>[!info]- ICMP error codes for rejected packets
+>
 > - Net Unreachable
 > - Net Prohibited
 > - Host Unreachable
@@ -52,8 +50,8 @@ The analysis of such attacks is based on pattern matching and signatures. If spe
 
 Nmap's TCP ACK scan (`-sA`) is much harder to filter for firewalls and IDS/IPS systems than regular SYN (`-sS`) or Connect (`-sT`) scans, because it only sends a TCP packet with the `ACK` flag. When a port is closed or open, the host must respond with an `RST` flag.
 
-[!important] Why the ACK flag passes the firewall
-
+>[!important] Why the ACK flag passes the firewall
+>
 > All connection attempts (with the `SYN` flag) from external networks are usually blocked by firewalls. However, packets with the `ACK` flag are often passed, because the firewall cannot determine whether the connection was first established from the external network or the internal network.
 
 #### SYN-Scan
@@ -91,8 +89,8 @@ PORT   STATE      SERVICE
 |`--disable-arp-ping`|Disables ARP ping.|
 |`--packet-trace`|Shows all packets sent and received.|
 
-[!note] Reading the RCVD flags
-
+>[!note] Reading the RCVD flags
+>
 > With the SYN scan (`-sS`), the target tries to establish the TCP connection by sending back a `SYN-ACK` (`SA`). With the ACK scan (`-sA`), an open port replies with the `RST` (`R`) flag. If no packet comes back at all (port 25 here), the packets are being dropped.
 
 ---
@@ -103,12 +101,12 @@ PORT   STATE      SERVICE
 
 Several virtual private servers (VPS) with different IP addresses are recommended to determine whether such systems are on the target network during a penetration test.
 
-[!warning] Getting blocked
-
+>[!warning] Getting blocked
+>
 > If the administrator detects a potential attack, the first step is to block the IP address the attack comes from. We then lose access to the network from that IP, and our ISP may be contacted and blocked from all Internet access.
 
-[!info] Detecting an IPS with a single host
-
+>[!info] Detecting an IPS with a single host
+>
 > Scan from a single host (VPS). If at any time this host is blocked and loses access to the target network, we know the administrator has taken some security measure. We can then continue the penetration test with another VPS, and know we need to be quieter with our scans.
 
 ---
@@ -117,8 +115,8 @@ Several virtual private servers (VPS) with different IP addresses are recommende
 
 > The Decoy scanning method (`-D`) makes Nmap generate various random IP addresses inserted into the IP header to disguise the origin of the packet sent. We can generate a specific number of random (`RND`) IP addresses separated by a colon (`:`). Our real IP address is then randomly placed among the generated ones.
 
-[!caution] Decoys must be alive
-
+>[!caution] Decoys must be alive
+>
 > Otherwise the service on the target may be unreachable due to SYN-flooding security mechanisms.
 
 #### Scan by Using Decoys
@@ -209,8 +207,8 @@ PORT      STATE SERVICE
 |---|---|
 |`--source-port 53`|Performs the scans from the specified source port.|
 
-[!tip] Confirming with Netcat
-
+>[!tip] Confirming with Netcat
+>
 > Now that the firewall accepts TCP port 53, IDS/IPS filters might also be configured weaker. Test by connecting to the port with Netcat from source port 53:
 
 ```shell

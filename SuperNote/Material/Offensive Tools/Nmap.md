@@ -44,6 +44,7 @@ nmap <scan types> [options] <target>
 | `--packet-trace`           | Shows all packets sent and received                                                                       |
 | `--disable-arp-ping`       | disable ARP pings                                                                                         |
 | `--stats-every=<duration>` | Print stats every **x** seconds (`s`) or **x** minutes (`m`)                                              |
+| `--script=trace`           | The ability to trace the progress of NSE scripts at the network level                                     |
 
 ---
 ## Extras :
