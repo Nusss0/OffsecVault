@@ -96,5 +96,5 @@ Use `get` to download the file and obtain `flag.txt`.
 - Each run on `nmap` could cause a diff **RESULT**. This happens because of *Probe Timing* on `nmap`
 ---
 ## Source :
-[[FTP]]
+[[CPTS/Footprinting/Sections/FTP]]
 
