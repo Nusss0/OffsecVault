@@ -5,7 +5,7 @@ tags:
   - HTB
   - Networking
 ---
->`Network File System` (`NFS`) is a network file system developed by Sun Microsystems and has the same purpose as SMB. Its purpose is to access file systems over a network as if they were local.
+C>`Network File System` (`NFS`) is a network file system developed by Sun Microsystems and has the same purpose as SMB. Its purpose is to access file systems over a network as if they were local.
 
 > [!info]- More about NFS
 >  [NFS](https://en.wikipedia.org/wiki/Network_File_System) is used between Linux and Unix systems. This means that NFS clients cannot communicate directly with SMB servers. NFS is an Internet standard that governs the procedures in a distributed file system. While NFS protocol version 3.0 (`NFSv3`), which has been in use for many years, authenticates the client computer, this changes with `NFSv4`. Here, as with the Windows SMB protocol, the user must authenticate.
@@ -203,5 +203,5 @@ nusss@htb[/htb]$ sudo umount ./target-NFS
 
 ---
 ## Related Source 
-[[nfs]]
+[[nfs]] [[NFS Questions]]
 
