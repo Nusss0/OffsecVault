@@ -4,8 +4,9 @@ Tittle: PIEs - Hard
 Date & Time: 2026 - 09 - 04 10:20
 tags:
   - Challenge
-  - ret2shell
-  - ShellcodeInjection
+  - ret2win
+  - PIE
+  - Bruteforce
 ---
 ---
 ## FLAG : `flag{}`

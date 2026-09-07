@@ -4,9 +4,12 @@ Tittle: String Lengths - Hard
 Date & Time: 2026 - 09 - 04 14:24
 tags:
   - Challenge
+  - PIE
+  - Bruteforce
+  - ret2win
 ---
 ---
-## FLAG : `flag{pwn.college{sGiztTU1fE1M3TgGyzO--yP44Mv.dRDMzwiN4kDOyEzW}}`
+## FLAG : `pwn.college{sGiztTU1fE1M3TgGyzO--yP44Mv.dRDMzwiN4kDOyEzW}`
 
 ---
 ## Solution :

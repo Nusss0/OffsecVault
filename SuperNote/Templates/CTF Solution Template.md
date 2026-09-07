@@ -1,19 +1,15 @@
 ---
 Platform:
 Tittle:
-Date & Time: "{{date}} {{time}}"
+Date & Tme: "{{date}} {{time}}"
 tags:
 ---
-
 ---
-## FLAG : `flag{}`
+## FLAG : `{}`
 
 ---
 ## Solution :
 
-### Step 1 :
-
-### Step 2 :
 
 ---
 ### Key Takeaways : 
@@ -24,6 +20,3 @@ tags:
 ## Related Concepts : 
 [[]]
 
----
-## Next Challenge :
-[[]]
