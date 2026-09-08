@@ -13,3 +13,126 @@ SMTP works unencrypted without further measures and transmits all commands, data
 
 SMTP Flow
 ![[Pasted image 20260907093151.png]]
+
+---
+## Interact with SMTP Server
+>To interact with the SMTP server, we can use the `telnet` tool to initialize a TCP connection with the SMTP server. The actual initialization of the session is done with the command mentioned above, `HELO` or `EHLO`.
+
+> [!example]- Telnet, HELO, and EHLO
+> ```shell
+> nusss@htb[/htb]$ telnet 10.129.14.128 25
+> 
+> Trying 10.129.14.128...
+> Connected to 10.129.14.128.
+> Escape character is '^]'.
+> 220 ESMTP Server 
+> 
+> #---------------------------------------------
+> HELO mail1.inlanefreight.htb
+> 
+> 250 mail1.inlanefreight.htb
+> 
+> #----------------------------------------------
+> EHLO mail1
+> 
+> 250-mail1.inlanefreight.htb
+> 250-PIPELINING
+> 250-SIZE 10240000
+> 250-ETRN
+> 250-ENHANCEDSTATUSCODES
+> 250-8BITMIME
+> 250-DSN
+> 250-SMTPUTF8
+> 250 CHUNKING
+> ```
+
+The command `VRFY` can be used to enumerate existing users on the system. However, this does not always work. Depending on how the SMTP server is configured, the SMTP server may issue `code 252` and confirm the existence of a user that does not exist on the system. A list of all SMTP response codes can be found [here](https://serversmtp.com/smtp-error/).
+
+> [!example]- VRFY
+> ```shell
+> nusss@htb[/htb]$ telnet 10.129.14.128 25
+> 
+> Trying 10.129.14.128...
+> Connected to 10.129.14.128.
+> Escape character is '^]'.
+> 220 ESMTP Server 
+> 
+> VRFY root
+> 
+> 252 2.0.0 root
+> 
+> 
+> VRFY cry0l1t3
+> 
+> 252 2.0.0 cry0l1t3
+> 
+> 
+> VRFY testuser
+> 
+> 252 2.0.0 testuser
+> 
+> 
+> VRFY aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+> 
+> 252 2.0.0 aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+> ```
+
+---
+## Send an Email
+
+> [!example]- Email sending
+> ```shell
+> nusss@htb[/htb]$ telnet 10.129.14.128 25
+> 
+> Trying 10.129.14.128...
+> Connected to 10.129.14.128.
+> Escape character is '^]'.
+> 220 ESMTP Server
+> 
+> 
+> EHLO inlanefreight.htb
+> 
+> 250-mail1.inlanefreight.htb
+> 250-PIPELINING
+> 250-SIZE 10240000
+> 250-ETRN
+> 250-ENHANCEDSTATUSCODES
+> 250-8BITMIME
+> 250-DSN
+> 250-SMTPUTF8
+> 250 CHUNKING
+> 
+> 
+> MAIL FROM: <cry0l1t3@inlanefreight.htb>
+> 
+> 250 2.1.0 Ok
+> 
+> 
+> RCPT TO: <mrb3n@inlanefreight.htb> NOTIFY=success,failure
+> 
+> 250 2.1.5 Ok
+> 
+> 
+> DATA
+> 
+> 354 End data with <CR><LF>.<CR><LF>
+> 
+> From: <cry0l1t3@inlanefreight.htb>
+> To: <mrb3n@inlanefreight.htb>
+> Subject: DB
+> Date: Tue, 28 Sept 2021 16:32:51 +0200
+> Hey man, I am trying to access our XY-DB but the creds don't work. 
+> Did you make any changes there?
+> .
+> 
+> 250 2.0.0 Ok: queued as 6E1CF1681AB
+> 
+> 
+> QUIT
+> 
+> 221 2.0.0 Bye
+> Connection closed by foreign host.
+>```
+
+
+
