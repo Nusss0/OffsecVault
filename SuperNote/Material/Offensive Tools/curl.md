@@ -16,7 +16,7 @@ curl [option] <url>
 | ------ | ----- | --------------------------------------------------------------------------------- |
 | `-I`   | -     | Fetch headers only, for banner grabbing                                           |
 | `-L`   | -     | Follow redirect, if the server return 301/302, curl will follow to the final page |
-|        |       |                                                                                   |
+| `-k `  | -     | `--insecure`, to ignore certificate validation from ssl/tls                       |
 ### Others :
 - For further information please use manual page.
 
