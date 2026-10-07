@@ -7,3 +7,6 @@
 ### Clients 
 >[SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) (`SSMS`) comes as a feature that can be installed with the MSSQL install package or can be downloaded & installed separately. Since SSMS is a client-side application, it can be installed and used on any system an admin or developer is planning to manage the database from. This means we could come across a vulnerable system with SSMS with saved credentials that allow us to connect to the database.
 
+---
+## Footprinting 
+ 
