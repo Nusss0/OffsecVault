@@ -7,5 +7,5 @@
 - [ ] [[SNMP]] - Network device monitoring protocol
 - [ ] [[MySQL]] - Database management system
 - [ ] [[MSSQL]] - Microsoft's Database management system
-- [ ] [[Oracle TNS]] - 
-- [ ] 
+- [ ] [[Oracle TNS]] - a communication protocol that facilitates communication between Oracle databases and applications over networks.
+- [ ] [[IPMI]] - a set of standardized specifications for hardware-based host management systems used for system management and monitoring
