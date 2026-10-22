@@ -1,8 +1,11 @@
 ---
-Platform:
-Tittle:
-Date & Tme: "2026 - 09 - 08 16:01"
+Platform: Pwn College
+Tittle: ello ackers
+Date & Tme: 2026 - 09 - 08 16:01
 tags:
+  - "#Challenge"
+  - BinaryExploitation
+  - ShellcodeInjection
 ---
 ---
 ## FLAG : `pwn.college{Ef3rjccqYzEsyOUSjXkpIs61xWe.dBjMywiN4kDOyEzW}`
@@ -110,6 +113,9 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x90\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 ---
 ### Key Takeaways : 
 - There are so much alternative shellcode. We should think out of the box to find them out.
+
+---
+## Related Concepts
 
 
 
