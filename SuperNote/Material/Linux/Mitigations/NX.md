@@ -25,4 +25,4 @@ Modern CPU architectures (such as AMD64 and ARM) feature an **NX bit** (bit 63 o
 
 ---
 ## Related Concepts : 
-[[ROP]], [[Buffer Overflow]], [[Shellcode Database]], [[checksec]], [[Assembly]]
+[[ROP]], [[Buffer Overflow]], [[Assembly Shellcode Database]], [[checksec]], [[Assembly]]

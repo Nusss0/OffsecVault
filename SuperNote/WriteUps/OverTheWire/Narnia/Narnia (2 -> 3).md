@@ -168,7 +168,7 @@ F5AYQwE8PA
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Shellcode Database]], [[Assembly - Stack Operations]], [[SetUID Files]], [[System Calls]], [[Narnia (1 -> 2)]]
+[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Assembly Shellcode Database]], [[Assembly - Stack Operations]], [[SetUID Files]], [[System Calls]], [[Narnia (1 -> 2)]]
 
 ---
 ## Next Challenge :

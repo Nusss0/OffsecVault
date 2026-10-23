@@ -91,4 +91,4 @@ if b'pwn' in output :
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[NOP Sled]], [[NX]], [[Shellcode Database]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]
+[[Buffer Overflow]], [[NOP Sled]], [[NX]], [[Assembly Shellcode Database]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]

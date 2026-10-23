@@ -32,4 +32,4 @@ When the CPU encounters the byte `\x90`, it performs no action other than advanc
 
 ---
 ## Related Concepts : 
-[[Shellcode Database]], [[Buffer Overflow]], [[Assembly]], [[ASLR]], [[Python - Payload Insert]], [[perl]]
+[[Assembly Shellcode Database]], [[Buffer Overflow]], [[Assembly]], [[ASLR]], [[Python - Payload Insert]], [[perl]]

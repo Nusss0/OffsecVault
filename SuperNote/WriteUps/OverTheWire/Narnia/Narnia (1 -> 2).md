@@ -163,7 +163,7 @@ It spawns the `setreuid()` first before spawns the shell. The key difference was
 
 ---
 ## Related Concepts : 
-[[getenv()]], [[Environment Variables]], [[execve()]], [[setreuid()]], [[setuid()]], [[User ID in Linux]], [[Shellcode Database]], [[Python - Payload Insert]], [[Assembly]]
+[[getenv()]], [[Environment Variables]], [[execve()]], [[setreuid()]], [[setuid()]], [[User ID in Linux]], [[Assembly Shellcode Database]], [[Python - Payload Insert]], [[Assembly]]
 
 ---
 ## Next Challenge :

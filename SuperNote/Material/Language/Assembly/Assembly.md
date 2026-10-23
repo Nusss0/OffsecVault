@@ -19,7 +19,9 @@ We use Intel syntax as it's more common in CTF challenges and reverse engineerin
 ## Assembly Topics
 
 ### Fundamentals
+- [[Writing Assembly Code]] - Complete guide to writing, compiling, and running x86-64 assembly
 - [[Assembly - Registers]] - Understanding x64 registers and their purposes
+- [[RIP-Relative Addressing]] - Position Independent Code (PIC) and relative addressing mechanics
 
 ### Instructions by Category
 - [[Assembly - Data Movement]] - MOV, LEA, XCHG instructions
@@ -85,4 +87,5 @@ addq %rbx, %rax     ; Same as: add rax, rbx
 
 ---
 ## Related Source:
+- [[Writing Assembly Code]] - Practical guide to authoring & compiling assembly
 - [[GDB]] - Essential for debugging assembly
