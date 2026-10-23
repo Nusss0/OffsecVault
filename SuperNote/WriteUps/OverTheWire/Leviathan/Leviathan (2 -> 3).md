@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Tags :** #Challenge #ReverseEngineering
+**Tags :** #Challenge #TOCTOU #Space-In-Filename #Symlink-Attack #Command-Injection
 **Completion Date & Time :** 2026 - 01 - 15 / 9:36
 
 ---
@@ -143,7 +143,7 @@ We get the password **`f0n8h2iWLP`**
 
 ---
 ## Related Concepts : 
-[[ltrace]], [[ln]], [[System Calls]], [[SetUID Files]]
+[[TOCTOU]], [[ltrace]], [[ln]], [[access()]], [[system()]], [[System Calls]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

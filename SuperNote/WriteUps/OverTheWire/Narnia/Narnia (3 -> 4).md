@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #BufferOverflow
+**Tags :** #Challenge #Path-Manipulation #Symlink-Attack #Directory-Traversal
 **Completion Date & Time :** 2026 - 02 - 11 / 15:08
 
 ---
@@ -128,7 +128,7 @@ CyWyf6uGWQ
 
 ---
 ## Related Concepts : 
-[[ln]], [[perl]], 
+[[ln]], [[perl]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

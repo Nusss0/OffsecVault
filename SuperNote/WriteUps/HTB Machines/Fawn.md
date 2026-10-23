@@ -1,3 +1,13 @@
+---
+Platform: HackTheBox - Machine
+Title: Fawn
+tags:
+  - Challenge
+  - Anonymous-FTP
+  - Port-21
+  - Network-Enumeration
+  - Misconfiguration
+---
 >  Fawn is a very easy Linux machine which explores the File Transfer Protocol (FTP) and its exploitation when misconfigured to allow anonymous access.
 
 ---
@@ -147,3 +157,7 @@ ftp> !cat flag.txt
 
 ---
 ## Flag : `035db21c881520061c53e0536e44f815`
+
+---
+## Related Concepts : 
+[[ftp]], [[Nmap]], [[cat]]

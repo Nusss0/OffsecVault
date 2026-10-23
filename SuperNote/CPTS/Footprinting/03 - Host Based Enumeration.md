@@ -1,2 +1,11 @@
 - [ ] [[CPTS/Footprinting/Sections/FTP]] - The `File Transfer Protocol` (`FTP`) is one of the oldest protocols on the Internet. The FTP runs within the application layer of the TCP/IP protocol stack. 
 - [ ] [[SMB]] - `Server Message Block` (`SMB`) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.
+- [ ] [[NFS]] - Used to access file systems over a network as if they were local.
+- [ ] [[DNS]] -  a system for resolving computer names into IP addresses
+- [ ] [[SMTP]] - a protocol for sending emails in an IP network
+- [ ] [[IMAP POP3]] - about mail protocol
+- [ ] [[SNMP]] - Network device monitoring protocol
+- [ ] [[MySQL]] - Database management system
+- [ ] [[MSSQL]] - Microsoft's Database management system
+- [ ] [[Oracle TNS]] - a communication protocol that facilitates communication between Oracle databases and applications over networks.
+- [ ] [[IPMI]] - a set of standardized specifications for hardware-based host management systems used for system management and monitoring

@@ -1,0 +1,2 @@
+- [ ] [[Linux Remote Management Protocols]] - Remote management protocols on Linux systems such as SSH, Rsync, and legacy R-Services (rlogin, rsh, rexec), covering configuration flaws, information disclosure, and unauthenticated access.
+- [ ] [[Windows Remote Management Protocols]] - Remote management protocols on Windows systems such as RDP (TCP 3389), WinRM (TCP 5985/5986), and WMI (TCP 135), covering service footprinting, NLA checks, and remote shell access via Evil-WinRM and wmiexec.py.

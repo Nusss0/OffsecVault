@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #BufferOverflow
+**Tags :** #Challenge #Stack-Overflow #Variable-Overwrite #scanf-Overflow
 **Completion Date & Time :** 2026 - 01 - 23 / 20:14
 
 ---
@@ -125,7 +125,7 @@ O8dJypubLr
 
 ---
 ## Related Concepts : 
-[[GDB]], [[Python - Payload Insert]], [[Assembly]], [[Assembly - Registers]]
+[[Buffer Overflow]], [[scanf()]], [[GDB]], [[Python - Payload Insert]], [[Assembly]], [[Assembly - Registers]], [[Assembly - Stack Operations]]
 
 ---
 ## Next Challenge :

@@ -4,8 +4,10 @@ Tittle: Abyss
 Date & Tme: 2026 - 09 - 11 10:44
 tags:
   - Challenge
-  - BinaryExploitation
+  - Stack-Overflow
   - ROP
+  - Unterminated-Read
+  - Buffer-Cascade
 ---
 ---
 ## FLAG : `{}`
@@ -42,5 +44,4 @@ The vulnerability :
 
 ---
 ## Related Concepts : 
-[[]]
-
+[[Buffer Overflow]], [[ROP]], [[ROPgadget]], [[GDB]], [[Assembly - Stack Operations]], [[Assembly - Control Flow]], [[Python - Payload Insert]], [[pwntools]]

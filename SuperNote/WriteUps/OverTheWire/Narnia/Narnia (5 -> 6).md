@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #FormatString #BinaryExploitation
+**Tags :** #Challenge #Format-String #Format-String-Write #Variable-Overwrite
 **Completion Date & Time :** 2026 - 02 - 26 / 14:53
 
 ---
@@ -90,7 +90,7 @@ uK3ikaZLxB
 
 ---
 ## Related Concepts : 
-[[snprintf()]], [[printf()]], [[Format String Attack]]
+[[Format String Attack]], [[snprintf()]], [[printf()]], [[GDB]]
 
 ---
 ## Next Challenge :

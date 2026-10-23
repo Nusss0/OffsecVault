@@ -4,8 +4,9 @@ Tittle: HIjack to (Mapped) Shellcode
 Date & Tme: 2026 - 09 - 07 12:05
 tags:
   - Challenge
-  - BufferOverflow
-  - ShellcodeInjection
+  - Stack-Overflow
+  - mmap-Execution
+  - NX-Bypass
   - PIE
 ---
 ---
@@ -100,3 +101,6 @@ if b'pwn' in output :
 	print(output.decode('utf-8', errors='ignore'))
 ```
 
+---
+## Related Concepts : 
+[[Buffer Overflow]], [[PIE]], [[NX]], [[gets()]], [[Shellcode Database]], [[Hijack to Shellcode]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]

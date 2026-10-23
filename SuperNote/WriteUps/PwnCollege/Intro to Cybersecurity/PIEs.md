@@ -4,8 +4,10 @@ Tittle: PIEs - Hard
 Date & Time: 2026 - 09 - 04 10:20
 tags:
   - Challenge
+  - Stack-Overflow
   - ret2win
-  - PIE
+  - Partial-Overwrite
+  - PIE-Bypass
   - Bruteforce
 ---
 ---
@@ -243,4 +245,8 @@ for i in range (0,30) :
 
 
 ---
-### Key Takeaways : 
+### Key Takeaways :
+
+---
+## Related Concepts : 
+[[Buffer Overflow]], [[ret2win]], [[PIE]], [[ASLR]], [[GDB]], [[Assembly - Stack Operations]], [[Python - Payload Insert]], [[pwntools]]

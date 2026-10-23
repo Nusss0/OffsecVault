@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #BufferOverflow
+**Tags :** #Challenge #Stack-Overflow #argv0-Shellcode #Environ-Cleared
 **Completion Date & Time :** 2026 - 02 - 11 / 20:58
 
 ---
@@ -163,7 +163,7 @@ $ cat /etc/narnia_pass/narnia5
 
 ---
 ## Related Concepts : 
-[[SetUID Files]], [[System Calls]], [[Narnia (2 -> 3)]], [[perl]], [[ltrace]], 
+[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Assembly - Stack Operations]], [[Shellcode Database]], [[SetUID Files]], [[System Calls]], [[Narnia (2 -> 3)]]
 
 ---
 ## Next Challenge :

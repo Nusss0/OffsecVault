@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Tags :** #Challenge #ReverseEngineering 
+**Tags :** #Challenge #Binary-Decoding #Hidden-Binary #SUID-Binary
 **Completion Date & Time :** 2026 - 01 - 15 / 17:02
 
 ---

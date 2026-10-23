@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #FormatString 
+**Tags :** #Challenge #Format-String #Format-String-Write #Function-Pointer-Overwrite
 **Completion Date & Time :** 2026 - 05 - 29 / 00:06
 
 ---
@@ -143,7 +143,7 @@ i1SQ81fkb8
 - Buffer overflow will fail because, `snprintf()` will only copy with the size of `buffer`, so it won't overflow and replace other stack.
 ---
 ## Related Concepts : 
-[[Format String Attack]], [[snprintf()]], [[Narnia (5 -> 6)]]
+[[Format String Attack]], [[snprintf()]], [[printf()]], [[GDB]], [[Narnia (5 -> 6)]]
 
 ---
 ## Next Challenge :

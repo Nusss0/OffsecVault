@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire
-**Tags :** #Challenge #ReverseEngineering 
+**Tags :** #Challenge #Hardcoded-Password #ltrace-Analysis #SUID-Binary
 **Completion Date & Time :** 2026 - 01 - 15 / 12:15
 
 ---
@@ -68,7 +68,7 @@ We have got the password `WG1egElCvO`.
 
 ---
 ## Related Concepts : 
-[[ltrace]], [[SetUID Files]]
+[[strcmp()]], [[ltrace]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

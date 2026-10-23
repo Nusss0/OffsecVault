@@ -1,6 +1,7 @@
 ## Challenge Info
 
 **Platform:** GEMASTIK 2026 - VS Code Extension
+**Tags :** #Challenge #PCAP-Analysis #DNS-Exfiltration #PowerShell-Deobfuscation #Git-Forensics #AES-CBC
 
 ---
 
@@ -249,3 +250,7 @@ The deleted file contains the flag:
 ```txt
 PRAGEM{My_Goat_1s_Lioneeeel_Messiiii111111}
 ```
+
+---
+## Related Concepts : 
+[[tshark]], [[DNS Exfiltration]], [[AES]], [[cat]], [[grep]]

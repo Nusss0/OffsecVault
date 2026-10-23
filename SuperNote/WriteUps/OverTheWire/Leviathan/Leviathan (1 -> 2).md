@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Tags :** #Challenge #ReverseEngineering 
+**Tags :** #Challenge #Hardcoded-Password #ltrace-Analysis #SUID-Binary
 **Completion Date & Time :** 2026 - 01 - 14 / 23:10
 
 ---
@@ -78,7 +78,7 @@ Finally we got the password  `"NsN1HwFoyN"`
 
 ---
 ## Related Concepts : 
-[[ltrace]], [[cat]], [[whoami]], [[ls]], [[SetUID Files]]
+[[strcmp()]], [[ltrace]], [[cat]], [[whoami]], [[ls]], [[SetUID Files]]
 
 ---
 ## Next Challenge :
