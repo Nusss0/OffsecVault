@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BufferOverflow #BinaryExploitation
+**Tags :** #Challenge #Stack-Overflow #Function-Pointer-Overwrite #ret2libc
 **Completion Date & Time :** 2026 - 05 - 23 / 16:39
 
 ---
@@ -170,7 +170,7 @@ $ cat /etc/narnia_pass/narnia7
 
 ---
 ## Related Concepts : 
-[[setreuid()]], 
+[[Buffer Overflow]], [[system()]], [[setreuid()]], [[GDB]], [[Assembly - Stack Operations]], [[SetUID Files]], [[User ID in Linux]]
 
 ---
 ## Next Challenge :

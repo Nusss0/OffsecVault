@@ -1,6 +1,7 @@
 ## Challenge Info
 
 **Platform:** GEMASTIK 2026 - Fokus Kripto
+**Tags :** #Challenge #Matrix-DLP #GCD-Factorization #Chinese-Remainder-Theorem #AES-ECB
 
 ---
 
@@ -442,3 +443,7 @@ Result:
 PRAGEM{MCl4ReN_lU_w4rN4_4p4_b055_aec5c738d510636f}
 ```
 ---
+
+---
+## Related Concepts : 
+[[AES]], [[Python - Payload Insert]], [[cat]]

@@ -1,7 +1,7 @@
  ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BinaryExploitation #SystemCalls #ShellcodeInjection #BufferOverflow
+**Tags :** #Challenge #Stack-Overflow #strcpy-Overflow #NX-Disabled #Shellcode-Injection
 **Completion Date & Time :** 2026 - 02 - 10 / 22:13
 
 ---
@@ -168,7 +168,7 @@ F5AYQwE8PA
 
 ---
 ## Related Concepts : 
-[[SetUID Files]], [[System Calls]], [[Narnia (1 -> 2)]], [[perl]], [[ltrace]], 
+[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Shellcode Database]], [[Assembly - Stack Operations]], [[SetUID Files]], [[System Calls]], [[Narnia (1 -> 2)]]
 
 ---
 ## Next Challenge :

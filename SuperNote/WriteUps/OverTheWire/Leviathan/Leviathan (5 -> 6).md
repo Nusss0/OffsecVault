@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Tags :** #Challenge #ReverseEngineering 
+**Tags :** #Challenge #Fixed-Path #Symlink-Attack #Arbitrary-Read #SUID-Binary
 **Completion Date & Time :** 2026 - 01 - 15 / 17:54
 
 ---
@@ -60,7 +60,7 @@ Now, we have the password `szo7HDB88w` for the next level.
 
 ---
 ## Related Concepts : 
-[[ltrace]], [[ln]],[[SetUID Files]]
+[[ltrace]], [[ln]], [[cat]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

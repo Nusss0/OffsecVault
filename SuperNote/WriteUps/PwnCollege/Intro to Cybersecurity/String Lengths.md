@@ -4,9 +4,11 @@ Tittle: String Lengths - Hard
 Date & Time: 2026 - 09 - 04 14:24
 tags:
   - Challenge
-  - PIE
-  - Bruteforce
+  - Null-Byte-Overflow
   - ret2win
+  - Partial-Overwrite
+  - PIE-Bypass
+  - Bruteforce
 ---
 ---
 ## FLAG : `pwn.college{sGiztTU1fE1M3TgGyzO--yP44Mv.dRDMzwiN4kDOyEzW}`
@@ -241,4 +243,8 @@ pwn.college{sGiztTU1fE1M3TgGyzO--yP44Mv.dRDMzwiN4kDOyEzW}
 ```
 
 ---
-### Key Takeaways : 
+### Key Takeaways :
+
+---
+## Related Concepts : 
+[[Buffer Overflow]], [[ret2win]], [[PIE]], [[PIEs]], [[GDB]], [[Assembly - Stack Operations]], [[Python - Payload Insert]], [[pwntools]]

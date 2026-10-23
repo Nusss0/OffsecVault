@@ -1,7 +1,7 @@
 ## Challenge Info
 
-**Platform:** 
-**Tags :** #Challenge
+**Platform:** OverTheWire - Narnia
+**Tags :** #Challenge #Stack-Overflow #Loop-Overflow #Off-By-One #NX-Disabled
 **Completion Date & Time :** 2026 - 07 - 06 / 13:26
 
 ---
@@ -146,7 +146,7 @@ for delta in range(-256, 256):
 
 ---
 ## Related Concepts : 
-[[]]
+[[Buffer Overflow]], [[GDB]], [[Assembly - Stack Operations]], [[Python - Payload Insert]], [[Shellcode Database]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

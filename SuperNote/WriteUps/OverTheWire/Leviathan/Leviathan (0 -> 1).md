@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Leviathan
-**Category:** #LinuxBasic #Challenge 
+**Tags :** #Challenge #Hidden-Files #File-Recon
 **Completion Date & Time :** 2026 - 01 - 13 / 12:17
 
 ---

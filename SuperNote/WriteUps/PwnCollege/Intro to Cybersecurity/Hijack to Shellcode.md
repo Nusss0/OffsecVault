@@ -4,10 +4,10 @@ Tittle: Hijack to Shellcode
 Date & Tme: 2026 - 09 - 08 11:13
 tags:
   - Challenge
-  - BinaryExploitation
-  - BufferOverflow
-  - ShellcodeInjection
-  - ROP
+  - Stack-Overflow
+  - Shellcode-Injection
+  - NX-Disabled
+  - NOP-Sled
 ---
 ---
 ## FLAG : `pwn.college{UsIPr8QlQV7_r5_2sQSxQnxy4NM.dJjMzwiN4kDOyEzW}`
@@ -88,3 +88,7 @@ if b'pwn' in output :
 ---
 ### Key Takeaways : 
 - If we don't use `aslr=False` we still could use a larger NOP sled, then we add a massive bytes so the `retaddress` will jump further and land in NOP as we want.
+
+---
+## Related Concepts : 
+[[Buffer Overflow]], [[NOP Sled]], [[NX]], [[Shellcode Database]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]
