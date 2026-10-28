@@ -21,7 +21,7 @@ smbmap -H <IP> -u <UserName> -p <Password> -d <DOMAIN>
 
 ### Recursively Searching For Files 
 ```shell
-smbmap -H <IP> -u <UserName> -p <Password> -R <ShareName>
+smbmap -H <IP> -u <UserName> -p <Password> -r <ShareName>
 ```
 
 ### Download / Uploading Files 
@@ -48,8 +48,8 @@ smbmap -H <IP> -u <UserName> -p <Password> --upload <Path>
 | `--upload <src> <dst>` | Uploads a local file to the target share (requires write access).                  |
 | `-x <command>`         | Executes a command on the target system (requires local admin rights).             |
 ### Others :
-
-
+- Use path in windows format, e.g : `dev\abc\flag.txt`
+- 
 ---
 ## Related Source : 
 [[SMB]]

@@ -1,3 +1,23 @@
+---
+Platform: HackTheBox - Academy
+Module: Footprinting
+Title: Footprinting Lab - Easy
+tags:
+  - Lab
+  - Academy
+  - CPTS
+  - Footprinting
+  - Host-Based-Enumeration
+  - DNS
+  - Zone-Transfer
+  - FTP
+  - Port-21
+  - Port-53
+  - Port-22
+  - SSH-Key
+  - Reconnaissance
+---
+
 ## Description
 We were commissioned by the company `Inlanefreight Ltd` to test three different servers in their internal network. The company uses many different services, and the IT security department felt that a penetration test was necessary to gain insight into their overall security posture.
 
@@ -205,4 +225,9 @@ cat /home/flag/flag.txt
 ```
 
 # Flag : `HTB{7nrzise7hednrxihskjed7nzrgkweunj47zngrhdbkjhgdfbjkc7hgj}`
+
+---
+## Related Concepts : 
+[[ftp]], [[CPTS/Footprinting/Sections/DNS|DNS]], [[Nmap]], [[ssh]], [[cat]]
+
 
