@@ -13,5 +13,6 @@ A collection of standard command-line tools and protocol clients used to communi
 - [ ] [[RPCclient]] - Tool to execute client-side MS-RPC functions to query users, groups, and domains over MSRPC/SMB (port 135/445).
 
 ## Network Interrogation & Packet Analysis
+- [ ] [[snmpwalk]] - Net-SNMP utility to recursively query and dump MIB subtrees, process arguments, and system configuration over SNMP (UDP 161).
 - [ ] [[Netcat]] - The TCP/IP Swiss Army knife for port scanning, banner grabbing, transferring files, and spawning reverse/bind shells.
 - [ ] [[tshark]] - Terminal-based network protocol analyzer and CLI version of Wireshark for capturing and parsing `.pcap` packet streams.

@@ -6,6 +6,7 @@ A curated index of specialized offensive security tools, frameworks, and exploit
 
 ## Network & Host Assessment
 - [ ] [[Nmap]] - Industry-standard network exploration and port/service/vulnerability scanner.
+- [ ] [[onesixtyone]] - High-speed SNMP scanner and community string brute-forcer for identifying responsive agents.
 - [ ] [[GoBuster]] - High-speed directory, DNS subdomain, and virtual host brute-forcing tool written in Go.
 - [ ] [[searchsploit]] - Offline command-line search utility for the Exploit-DB archive.
 
