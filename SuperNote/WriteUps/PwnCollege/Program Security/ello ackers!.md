@@ -1,13 +1,13 @@
 ---
 Platform: Pwn College
 Tittle: ello ackers!
-Date & Tme: "2026 - 09 - 08 16:01"
+Date & Tme: 2026 - 09 - 08 16:01
 tags:
   - Challenge
   - Shellcode-Crafting
-  - Opcode-Filter
   - Instruction-Substitution
-  - 32bit-in-64bit
+  - BinaryExploitation
+  - ShellcodeInjection
 ---
 ---
 ## FLAG : `pwn.college{Ef3rjccqYzEsyOUSjXkpIs61xWe.dBjMywiN4kDOyEzW}`
@@ -118,4 +118,4 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x90\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 
 ---
 ## Related Concepts : 
-[[Basic Shellcode]], [[NOP Sled]], [[Shellcode Database]], [[Assembly - Registers]], [[Assembly - Data Movement]], [[perl]]
+[[Basic Shellcode]], [[NOP Sled]], [[Assembly Shellcode Database]], [[Assembly - Registers]], [[Assembly - Data Movement]], [[perl]]

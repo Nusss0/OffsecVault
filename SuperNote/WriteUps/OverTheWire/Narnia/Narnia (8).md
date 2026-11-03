@@ -146,7 +146,7 @@ for delta in range(-256, 256):
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[GDB]], [[Assembly - Stack Operations]], [[Python - Payload Insert]], [[Shellcode Database]], [[SetUID Files]]
+[[Buffer Overflow]], [[GDB]], [[Assembly - Stack Operations]], [[Python - Payload Insert]], [[Assembly Shellcode Database]], [[SetUID Files]]
 
 ---
 ## Next Challenge :

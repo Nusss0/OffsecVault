@@ -163,7 +163,7 @@ $ cat /etc/narnia_pass/narnia5
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Assembly - Stack Operations]], [[Shellcode Database]], [[SetUID Files]], [[System Calls]], [[Narnia (2 -> 3)]]
+[[Buffer Overflow]], [[strcpy()]], [[GDB]], [[perl]], [[Assembly - Stack Operations]], [[Assembly Shellcode Database]], [[SetUID Files]], [[System Calls]], [[Narnia (2 -> 3)]]
 
 ---
 ## Next Challenge :

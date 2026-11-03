@@ -55,4 +55,4 @@ perl -e 'print "\x90"x0x800 . "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\
 
 ---
 ## Related Concepts : 
-[[Basic Shellcode]], [[NOP Sled]], [[Shellcode Database]], [[Assembly]], [[perl]]
+[[Basic Shellcode]], [[NOP Sled]], [[Assembly Shellcode Database]], [[Assembly]], [[perl]]

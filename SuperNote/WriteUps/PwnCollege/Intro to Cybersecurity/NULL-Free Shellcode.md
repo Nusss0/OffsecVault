@@ -66,4 +66,4 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 
 ---
 ## Related Concepts : 
-[[Basic Shellcode]], [[Shellcode Database]], [[Assembly - Logic & Bitwise]], [[Assembly - Registers]], [[perl]]
+[[Basic Shellcode]], [[Assembly Shellcode Database]], [[Assembly - Logic & Bitwise]], [[Assembly - Registers]], [[perl]]

@@ -62,4 +62,4 @@ perl -e 'print "\xeb\x2f\x5f\x6a\x02\x58\x48\x31\xf6\x0f\x05\x66\x81\xec\xef\x0f
 
 ---
 ## Related Concepts : 
-[[Shellcode Database]], [[System Calls]], [[Assembly]], [[Assembly - Registers]], [[Assembly - Data Movement]], [[perl]]
+[[Assembly Shellcode Database]], [[System Calls]], [[Assembly]], [[Assembly - Registers]], [[Assembly - Data Movement]], [[perl]]

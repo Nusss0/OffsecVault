@@ -103,4 +103,4 @@ if b'pwn' in output :
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[PIE]], [[NX]], [[gets()]], [[Shellcode Database]], [[Hijack to Shellcode]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]
+[[Buffer Overflow]], [[PIE]], [[NX]], [[gets()]], [[Assembly Shellcode Database]], [[Hijack to Shellcode]], [[Assembly - Stack Operations]], [[GDB]], [[Python - Payload Insert]]

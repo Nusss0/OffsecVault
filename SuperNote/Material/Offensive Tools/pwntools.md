@@ -66,4 +66,4 @@ rop.win(0xdeadbeef)              # Auto-crafts gadget chain if symbols available
 
 ---
 ## Related Concepts : 
-[[Buffer Overflow]], [[ROP]], [[GDB]], [[Python - Payload Insert]], [[Shellcode Database]]
+[[Buffer Overflow]], [[ROP]], [[GDB]], [[Python - Payload Insert]], [[Assembly Shellcode Database]]
