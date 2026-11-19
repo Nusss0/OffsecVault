@@ -1,6 +1,8 @@
 {
   "translucency": true,
   "enabledCssSnippets": [
-    "Tables"
-  ]
+    "Tables",
+    "wide-justify"
+  ],
+  "showRibbon": true
 }

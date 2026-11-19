@@ -1,9 +1,8 @@
 ---
 Platform:
-Tittle:
-Date & Tme: "{{date}} {{time}}"
+Title:
+Date: "{{date}}"
 tags:
----
 ---
 ## FLAG : `{}`
 
@@ -12,11 +11,9 @@ tags:
 
 
 ---
-### Key Takeaways : 
-
+### Key Takeaways :
 
 
 ---
-## Related Concepts : 
+## Related Concepts :
 [[]]
-

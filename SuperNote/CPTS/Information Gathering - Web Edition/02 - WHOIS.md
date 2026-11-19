@@ -1,0 +1,2 @@
+- [ ] [[WHOIS]] - Query and response protocol used to retrieve registration details for domain names, IP blocks, and autonomous systems, including registrant contacts, name servers, and historical ownership data.
+- [ ] [[Utilising WHOIS]] - Practical scenarios for applying WHOIS data (phishing investigation, malware C2 analysis, threat intelligence profiling) and interpreting real-world WHOIS records.

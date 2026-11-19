@@ -1,6 +1,7 @@
 ```python
 from pwn import *
 context.log_level = 'critical' #to mute any failed attemp
+context.terminal = ['tmux', 'splitw', '-v']
 file = ('')
 
 # Payload Building

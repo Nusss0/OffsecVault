@@ -34,9 +34,9 @@ sudo nmap -p- --min-rate=5000 $ip -Pn
 ```
 
 ### Open Ports & Services:
-| Port     | Service | Version / Banner | Initial Thoughts / Attack Vector              |
-| :------- | :------ | :--------------- | :-------------------------------------------- |
-| `xx/tcp` | service | version          | Potensi anonymous login / exploit / misconfig |
+| Port     | Service | Version / Banner | Initial Thoughts / Attack Vector                    |
+| :------- | :------ | :--------------- | :-------------------------------------------------- |
+| `xx/tcp` | service | version          | Potential anonymous login / exploit / misconfiguration |
 
 ---
 
@@ -57,7 +57,7 @@ sudo nmap -p- --min-rate=5000 $ip -Pn
 ---
 
 ## 3. Privilege Escalation (PrivEsc)
-*(Optional / Jika ada di lab Medium & Hard)*
+*(Optional / Applicable for Medium & Hard labs)*
 
 ### Vector Identified:
 {{What was the flaw? E.g., Password reuse, misconfigured share, sudo rights, SUID, weak service}}
@@ -84,14 +84,14 @@ sudo nmap -p- --min-rate=5000 $ip -Pn
 ---
 
 ## 5. Why This Happened (Root Cause & Human Error)
-* **Akar Masalah:** {{Penjelasan 1-2 kalimat kenapa server bisa punya celah ini, misal: Admin malas bikin password beda / lupa pasang filter IP.}}
-* **Dampak Bisnis:** {{Data apa yang bocor atau kontrol apa yang hilang.}}
+* **Root Cause:** {{1-2 sentence explanation of why this vulnerability or misconfiguration existed (e.g., weak password reuse, missing IP whitelist, default credentials).}}
+* **Business Impact:** {{What sensitive data was exposed or what control/access was compromised.}}
 
 ---
 
 ## 6. Key Takeaways & Lessons Learned
-* **Hal Baru yang Dipelajari:** {{Tools atau sintaks baru yang terbukti ampuh.}}
-* **Jalan Buntu (Rabbit Holes) yang Dihindari:** {{Hal yang sempat dicoba tapi ternyata tidak efektif.}}
+* **New Concepts Learned:** {{Tools, protocols, or syntax that proved effective.}}
+* **Rabbit Holes Avoided:** {{Paths tried that turned out to be ineffective or dead ends.}}
 
 ---
 

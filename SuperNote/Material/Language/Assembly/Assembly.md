@@ -22,6 +22,7 @@ We use Intel syntax as it's more common in CTF challenges and reverse engineerin
 - [[Writing Assembly Code]] - Complete guide to writing, compiling, and running x86-64 assembly
 - [[Assembly - Registers]] - Understanding x64 registers and their purposes
 - [[RIP-Relative Addressing]] - Position Independent Code (PIC) and relative addressing mechanics
+- [[Assembly - Instruction Anatomy & Byte Calculation]] - x86-64 instruction encoding, ModR/M, SIB, and opcode byte size calculation
 
 ### Instructions by Category
 - [[Assembly - Data Movement]] - MOV, LEA, XCHG instructions

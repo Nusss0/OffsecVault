@@ -3,5 +3,10 @@
   "alwaysUpdateLinks": true,
   "livePreview": true,
   "propertiesInDocument": "visible",
-  "showLineNumber": false
+  "showLineNumber": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "rightToLeft": false,
+  "vimMode": false,
+  "tabSize": 4
 }

@@ -1,0 +1,1 @@
+- [ ] [[Web Reconnaissance]] - Foundation of a thorough web security assessment, covering the primary goals of web reconnaissance (identifying assets, discovering hidden info, analysing attack surface, gathering intelligence) and comparing Active vs. Passive reconnaissance techniques.
